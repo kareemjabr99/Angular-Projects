@@ -1,0 +1,81 @@
+// //arrays
+// let names = ['luigi', 'mario', 'a7a'];
+
+// names.push('toad');
+
+// let age: any = 25;
+// age = true;
+// age = 'luigi';
+
+//---------functions basic #8 --------------
+
+// let greet = () => {
+//     console.log("Hello World!")
+// }
+// greet = "hello"
+
+// let greet: Function;
+
+// greet = () => {
+//     console.log("hello,again");
+// }
+
+// //? makes the var optional OR put = to set a default parameter of we can set what we want
+// //*put the optional parameter at the end*
+// const add = (a: number, b: number, c: number | string = 10): void => { 
+//     console.log(a + b);
+//     console.log(c);
+// }
+
+// add(5, 10, '20');
+
+// const minus = (a: number, b: number) => {
+//     return a + b;
+// }
+// // it can infere the type of the output
+// let const2 = minus(5, 10)
+
+//----------Type Aliases #9----------
+
+// type StringOrNum = string | number
+// type objWithName = {name: string, uid: StringOrNum}
+
+// const logDetails = (uid: StringOrNum, item: string) => {
+//     console. log('${item} has a uid of ${uid}');
+//     }
+// const greet = (user: objWithName) => {
+//     console.log('$(user name} says hello');
+// }
+
+//----------Function Signature #10------------
+
+// //Ex1
+// let greet: (a: string, b: string) => void;
+
+// greet = (name: string, greeting: string) => {
+//     console.log('${name} says ${greeting}');
+// }
+
+// //Ex2
+// let calc: (a: number, b: number, c: string) => number;
+
+// calc = (numOne: number, numTWo: number, action: string) => {
+//     if( action === 'add'){
+//         return numOne + numTWo;
+//     }
+//     else{
+//         return numOne - numTWo;
+//     }
+// }
+
+// //Ex3
+// let logDetails: (obj: {name: string, age: number}) => void;
+// type person = {name: string, age: number};
+
+// logDetails = (ninja: person) => {
+//     console.log('${ninja.name} is ${ninja.age} years old')
+// }
+
+
+
+
